@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .auth a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.banner {
+  background-image: url('vacuum-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.vacuum-controls {
+  padding: 20px;
+}
+
+.vacuum-controls h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.control-item {
+  margin-bottom: 20px;
+}
+
+.control-item label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.control-item select,
+.control-item input[type="time"],
+.control-item button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.control-item button {
+  background-color: #985ACE;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-item button:hover {
+  background-color: #985ACE;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Управление роутером для Wi-Fi</title>
+  <link rel="stylesheet" href="Упрпвление роутером.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="Logo.png" alt="logo-png">
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+          <div class="menu-btn" id="menu-btn">
+
+          </div>
+        </div>
+        <div class="group-button-header">
+          <a class="btn-join-free" href="страница 1 .Html">На главную</a>
+          <a class="btn-join-free" href="Покупка.Html">Добавить устройство</a>
+          <a class="sign-in" href="Вход.Html">Вход</a>
+          <a class="btn-join-free" href="Регистрация.Html">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Управление роутером для Wi-Fi</h1>
+      <p>Настройте функции роутера, такие как включение/выключение Wi-Fi, настройка пароля и управление подключенными устройствами.</p>
+    </section>
+
+    <section class="router-controls">
+      <h2>Настройки роутера</h2>
+      <div class="control-item">
+        <label for="wifi-status">Статус Wi-Fi:</label>
+        <select id="wifi-status" name="wifi-status">
+          <option value="on">Включено</option>
+          <option value="off">Выключено</option>
+        </select>
+      </div>
+      <div class="control-item">
+        <label for="wifi-password">Пароль Wi-Fi:</label>
+        <input type="password" id="wifi-password" name="wifi-password" placeholder="Введите пароль">
+      </div>
+      <div class="control-item">
+        <label for="connected-devices">Подключенные устройства:</label>
+        <ul id="connected-devices">
+          <!-- Список подключенных устройств будет заполняться динамически -->
+        </ul>
+      </div>
+      <button id="apply-settings">Применить настройки</button>
+    </section>
+  </main>
+
+  
+
+  <script>document.addEventListener('DOMContentLoaded', function() {
+    const applySettingsButton = document.getElementById('apply-settings');
+    applySettingsButton.addEventListener('click', function() {
+      const wifiStatus = document.getElementById('wifi-status').value;
+      const wifiPassword = document.getElementById('wifi-password').value;
+  
+      // Пример обработки данных
+      console.log('Статус Wi-Fi:', wifiStatus);
+      console.log('Пароль Wi-Fi:', wifiPassword);
+  
+      // Здесь можно добавить код для отправки данных на сервер или управления устройством
+      alert('Настройки применены успешно!');
+    });
+  
+    // Пример динамического заполнения списка подключенных устройств
+    const connectedDevices = document.getElementById('connected-devices');
+    const devices = ['Устройство 1', 'Устройство 2', 'Устройство 3'];
+    devices.forEach(device => {
+      const li = document.createElement('li');
+      li.textContent = device;
+      connectedDevices.appendChild(li);
+    });
+  });
+  </script>
+</body>
+</html>

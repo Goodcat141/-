@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавить устройство в ручную</title>
+  <link rel="stylesheet" href="Покупка.css">
+</head>
+<body>
+  <form class="purchase-form" action="/submit-purchase" method="POST">
+    <h2>Добавить устройство в ручную</h2>
+    <label for="name">Язык озвучки устройства</label>
+    <select id="appliance" name="appliance" required>
+      <option value="smart-light">Английский</option>
+      <option value="robot-vacuum">Китайский</option>
+     
+    </select>
+    <label for="email">Номер комнаты </label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Регион</label>
+    <input type="tel" id="phone" name="phone" required>
+
+
+    <label for="appliance">Тип устройства</label>
+    <select id="appliance" name="appliance" required>
+      <option value="smart-light">Чайник</option>
+      <option value="robot-vacuum">Робот пылесос</option>
+      <option value="smart-thermostat">Видео камера</option>
+      <option value="smart-camera">Кормушка для домашних животных</option>
+      <option value="smart-plug">Роутер</option>
+      <option value="smart-plug">Телевизор</option>
+    </select>
+
+    <label for="quantity">Серийный код устройства</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+    <button type="submit">Добавить устройство</button>
+  </form>
+</body>
+</html>
